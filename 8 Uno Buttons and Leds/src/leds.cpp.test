@@ -1,0 +1,53 @@
+/**
+ *
+ *****************************************************************
+ * IOT Challenges - https://instagram.com/iotchallenges          *
+ *****************************************************************
+ * Evandro Fruhauf                                               *
+ *  GitHub - https://github.com/evandrodp                        *
+ *  LinkedIn - http://linkedin.com/in/evandrofruhauf             *
+ *****************************************************************
+ * This code can contain parts from other open-sources projects, *
+ * whenever possible it will be quoted.                          *
+ *****************************************************************
+ *
+ * Buttons and Leds
+ *
+ * Challenge: Make the buttons works with the leds using Deboucing
+ *
+ * THIS CODE WILL ONLY FLASH THE LEDS - YOU CAN USE TO TEST YOUR LEDS.
+ *
+**/
+
+#include <Arduino.h>
+
+// Set LEDs
+#define LED_RED 4
+#define LED_YELLOW 5
+#define LED_GREEN 6
+#define LED_BLUE 7
+
+void setup()
+{
+  // initialize LEDs  digital pin as an output.
+  pinMode(LED_GREEN, OUTPUT);
+  pinMode(LED_YELLOW, OUTPUT);
+  pinMode(LED_RED, OUTPUT);
+  pinMode(LED_BLUE, OUTPUT);
+}
+
+void blink(led) {
+  // turn the led on (HIGH is the voltage level)
+  digitalWrite(led, HIGH);
+  // wait
+  delay(1000);
+  // turn the led off by making the voltage LOW
+  digitalWrite(led, LOW);
+}
+void loop()
+{
+  blink(LED_RED);
+  blink(LED_GREEN);
+  blink(LED_YELLOW);
+  blink(LED_BLUE);
+}

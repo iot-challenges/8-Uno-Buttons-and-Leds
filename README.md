@@ -6,7 +6,8 @@ Platform: Arduino UNO
 
 [Use VSCODE with Platform.io to compile the code](https://platformio.org/?ref=iotchallenges)
 
-* Instagram text
+### Instagram text
+
 [8 Uno Buttons and Leds]
 The challenge is make the buttons works with the leds using Deboucing
 
